@@ -1,0 +1,337 @@
+{ 
+	"name": "Cisco Matthew",
+ 	"scopeName": "text.cisco",
+ 	"fileTypes": ["txt"],
+	"patterns": [
+		{
+            "name": "invalid.illegal.cisco", 
+            "match": "^\\s*no "
+        }, 
+        {
+            "name": "invalid.illegal.cisco", 
+            "match": "^\\s*shutdown"
+        }, 
+        {
+            "name": "support.function.cisco", 
+            "match": "access-list"
+        }, 
+        {
+            "name": "string.unquoted.cisco", 
+            "match": "crypto "
+        }, 
+        {
+            "name": "support.constant.cisco", 
+            "match": "deny "
+        }, 
+        {
+            "name": "constant.character.escape.cisco", 
+            "match": "permit "
+        }, 
+        {
+            "name": "markup.list.cisco", 
+            "match": "object-group"
+        }, 
+        {
+            "name": "markup.list.cisco", 
+            "match": "object"
+        }, 
+        {
+            "name": "markup.list.cisco", 
+            "match": "host"
+        }, 
+        {
+            "name": "comment.cisco", 
+            "match": "^[\\s]*!(.*)"
+        }, 
+        {
+            "name": "constant.numeric.cisco", 
+            "match": "static"
+        }, 
+        {
+            "name": "support.class.cisco", 
+            "match": "tunnel-group"
+        }, 
+        {
+            "name": "support.class.cisco", 
+            "match": "crypto"
+        }, 
+        {
+            "name": "constant.numeric.cisco", 
+            "match": "\\d+\\.\\d+\\.\\d+\\.\\d+(/\\d{1,2})?"
+        }, 
+        {
+            "name": "string11.numeric.cisco", 
+            "match": "[0-9]{0,2}:([0-9]{0,2}:)+[0-9]{0,2}\\.[0-9]{0,3}"
+        }, 
+        {
+            "name": "constant.numeric.cisco", 
+            "match": "[0-9a-fA-F]{0,4}:([0-9a-fA-F]{0,4}:)+[0-9a-fA-F]{0,4}(/\\d{1,3})?"
+        }, 
+        {
+            "name": "log.numeric.cisco", 
+            "match": "\\*(Jen|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dic) \\d+"
+        }, 
+        {
+            "name": "comment.numeric.cisco", 
+            "match": "^..(([0-9a-fA-F]{8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{0,8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8})) "
+        }, 
+        {
+            "name": "comment.numeric.cisco", 
+            "match": "^..(([0-9a-fA-F]{8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{0,8}))"
+        }, 
+        {
+            "name": "comment.numeric.cisco", 
+            "match": "^..(([0-9a-fA-F]{8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8}) ([0-9a-fA-F]{0,8}))"
+        }, 
+        {
+            "name": "comment.numeric.cisco", 
+            "match": "certificate .*"
+        }, 
+        {
+            "name": "comment.numeric.cisco", 
+            "match": "quit"
+        }, 
+        {
+            "name": "modifiche.numeric.cisco", 
+            "match": ".*<.*>.*"
+        }, 
+        {
+            "name": "string2.numeric.cisco", 
+            "match": "([S])tatus"
+        }, 
+        {
+            "name": "comment.cisco", 
+            "match": "^banner"
+        }, 
+        {
+            "name": "test11.cisco", 
+            "match": "^snmp-server.*"
+        }, 
+        {
+            "name": "show.cisco", 
+            "match": "( sh | show |#sh |#show |>sh |>show ).*"
+        }, 
+        {
+            "name": "arancio.numeric.cisco", 
+            "match": "errdisable recovery .*"
+        }, 
+        {
+            "name": "string2.unquoted.cisco", 
+            "match": " any "
+        }, 
+        {
+            "name": "connect.unquoted.cisco", 
+            "match": "connected|Connected|Active|OK|Ready"
+        }, 
+        {
+            "name": "connect.unquoted.cisco", 
+            "match": " up "
+        }, 
+        {
+            "name": "connect.unquoted.cisco", 
+            "match": "\\(P\\)"
+        }, 
+        {
+            "name": "connect.unquoted.cisco", 
+            "match": "\\(SU\\)"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "secret.\\d+"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "privilege.\\d+.secret"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": " auto "
+        }, 
+        {
+            "name": "notconnect.unquoted.cisco", 
+            "match": "notconnect|Not connected|Removed|inactive| DOWN "
+        }, 
+        {
+            "name": "notconnect.unquoted.cisco", 
+            "match": " down | admin down | administratively down| down"
+        }, 
+        {
+            "name": "notconnect.unquoted.cisco", 
+            "match": "\\(D\\)"
+        }, 
+        {
+            "name": "notconnect.unquoted.cisco", 
+            "match": "\\(SD\\)"
+        }, 
+        {
+            "name": "arancione.unquoted.cisco", 
+            "match": "\\(I\\)"
+        }, 
+        {
+            "name": "arancione.unquoted.cisco", 
+            "match": "Standby"
+        }, 
+        {
+            "name": "rosso.unquoted.cisco", 
+            "match": "password.\\d"
+        }, 
+        {
+            "name": "rosso.unquoted.cisco", 
+            "match": "(a-|\\s)10 "
+        }, 
+        {
+            "name": "giallo.unquoted.cisco", 
+            "match": "(a-|\\s)100 "
+        }, 
+        {
+            "name": "giallo.unquoted.cisco", 
+            "match": "a-half "
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "( 1000 )"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "(a-1000.|.a-1000)"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "(\\s10G\\s)"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "full "
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": " a-full"
+        }, 
+        {
+            "name": "arancione.unquoted.cisco", 
+            "match": "\\s+disabled"
+        }, 
+        {
+            "name": "string10.unquoted.cisco", 
+            "match": "\\smonitoring\\s"
+        }, 
+        {
+            "name": "arancione.unquoted.cisco", 
+            "match": "half"
+        }, 
+        {
+            "name": "giallo.unquoted.cisco", 
+            "match": "^.\\w.*(?=#)"
+        }, 
+        {
+            "name": "giallo.unquoted.cisco", 
+            "match": "^.\\w.*(?=>)"
+        }, 
+        {
+            "name": "giallo.unquoted.cisco", 
+            "match": "^hostname .*$"
+        }, 
+        {
+            "name": "giallo.unquoted.cisco", 
+            "match": "username"
+        }, 
+        {
+            "name": "invalid.illegal.cisco", 
+            "match": "err-disabled"
+        }, 
+        {
+            "name": "rosso.unquoted.cisco", 
+            "match": "changed state to down"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "changed state to up"
+        }, 
+        {
+            "name": "string7.unquoted.cisco", 
+            "match": "((Fa|Gi|Te)\\d?/\\d?/*\\d*|Po\\d+|Lo\\d+|Vl\\d+)"
+        }, 
+        {
+            "name": "string7.unquoted.cisco", 
+            "match": "((Fas |Gig |Ten )\\d?/\\d?/*\\d*)"
+        }, 
+        {
+            "name": "string7.unquoted.cisco", 
+            "match": "((FastEthernet|GigabitEthernet|TenGigabitEthernet)\\d?/\\d?/*\\d*|(Port-channel|FastEthernet|Vlan)\\d+)"
+        }, 
+        {
+            "name": "string7.unquoted.cisco", 
+            "match": "^(interface|Interface)"
+        }, 
+        {
+            "name": "string7.unquoted.cisco", 
+            "match": "(interface|Interface)"
+        }, 
+        {
+            "name": "description.unquoted.cisco", 
+            "match": "description \\w+.*"
+        }, 
+        {
+            "name": "rosso.unquoted.cisco", 
+            "match": "changed state to down"
+        }, 
+        {
+            "name": "verde.unquoted.cisco", 
+            "match": "changed state to up"
+        }, 
+        {
+            "name": "test11.unquoted.cisco", 
+            "match": "(10/100/1000BaseTX|10/100BaseTX)"
+        }, 
+        {
+            "name": "test11.unquoted.cisco", 
+            "match": "(10/100/1000BaseTX|10/100BaseTX)"
+        }, 
+        {
+            "name": "test11.unquoted.cisco", 
+            "match": "(10/100/1000BaseTX|10/100BaseTX)"
+        }, 
+        {
+            "name": "rosso.unquoted.cisco", 
+            "match": "( Not Present)"
+        }, 
+        {
+            "name": "string8.unquoted.cisco", 
+            "match": "username.\\w+.(secret|password).\\d.*"
+        }, 
+        {
+            "name": "comment.unquoted.cisco", 
+            "match": "(?!secret \\d+ )\\$.*$"
+        }, 
+        {
+            "name": "string10.unquoted.cisco", 
+            "match": "switchport mode trunk"
+        }, 
+        {
+            "name": "string12.unquoted.cisco", 
+            "match": "switchport mode access"
+        }, 
+        {
+            "name": "string11.unquoted.cisco", 
+            "match": "spanning.tree (portfast trunk|portfast)"
+        }, 
+        {
+            "name": "ip.unquoted.cisco", 
+            "match": "^\\s+ip address.\\d+\\.\\d+\\.\\d+.\\d+.\\d+\\.\\d+\\.\\d+.\\d+.\\d+"
+        }, 
+        {
+            "name": "ip.unquoted.cisco", 
+            "match": "^\\s+ip address .\\d+\\.\\d+\\.\\d+.\\d+.\\d+\\.\\d+\\.\\d+.\\d+.\\d+ secondary"
+        }, 
+        {
+            "name": "string11.unquoted.cisco", 
+            "match": "^aaa .*"
+        }, 
+        {
+            "name": "invalid.illegal.cisco", 
+            "match": "^(vlan.\\d+.*)"
+		}
+	  
+	],
+	"uuid": "f3ba50f0-2bad-48b7-9509-f6d72e353ddb"
+}
