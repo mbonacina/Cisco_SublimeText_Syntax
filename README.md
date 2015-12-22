@@ -1,6 +1,6 @@
 # Cisco_SublimeText_Syntax
 ---------------------------------
-#   Updating Available soon
+#   Updating --  Available soon
 ---------------------------------
 ---------------------------------
 
