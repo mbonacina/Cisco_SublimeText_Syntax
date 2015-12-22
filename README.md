@@ -5,5 +5,6 @@
 
 Copy the file in:
 * C:\Users\(YourUser)\AppData\Roaming\Sublime Text 3\Packages\User
+  $ C:\
 
 ### Test
