@@ -1,5 +1,8 @@
 # Cisco_SublimeText_Syntax
 
+#   Updating
+# Available soon
+
 ## Sublime Text 3
 ### Install on Windows
 
